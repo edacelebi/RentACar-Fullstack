@@ -1,0 +1,24 @@
+<!-- <div class="alert alert-primary" role="alert">
+  This is a primary alert—check it out!
+</div>
+
+
+<!-- <button (click)="btnClick()">serap tıkla </button> -->
+<form class="w-50 me-3 mt-5 mb-5">
+  <input type="search" class="form-control" placeholder="Search..." [(ngModel)]="textFilter"  name="filterText"
+    id="filterText">
+</form>
+
+<div class="row">
+  <div *ngFor="let car of cars | filter:textFilter"
+  class="card" style="width: 18rem;">
+  <img src="" class="card-img-top" alt="">
+  <div class="card-body">
+    <h5 class="card-title">{{car.model.name}}</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+
+  
