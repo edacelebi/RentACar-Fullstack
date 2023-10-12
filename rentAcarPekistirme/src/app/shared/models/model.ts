@@ -1,7 +1,8 @@
-import { Brand } from "./brand"
+import { Brand } from "../../features/brand/models/brand"
 
 export interface Model {
     id:number
     name:string
-    brandId:number
+    //brandId:number
+    brand:Brand
 }
