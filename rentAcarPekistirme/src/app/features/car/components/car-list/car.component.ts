@@ -35,7 +35,6 @@ export class CarComponent implements OnInit{
   getCars() {
     this.carAbstractService.getCarList().subscribe((response) => {
       this.cars = response;
-      //this.initializeShowInfoArray();
     });
   }
 
@@ -51,7 +50,4 @@ export class CarComponent implements OnInit{
   //   this.router.navigate(['eda']);
   // }
 
-  initializeShowInfoArray() {
-    this.showInfo = Array(this.cars.length).fill(false);
-  }
 }
